@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",  // Compiled JavaScript will be stored here
+    "baseUrl": "./",     // Root directory for module resolution
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
+  },
+ "include": [
+  "server/**/*.ts",
+  "server/**/*.tsx",
+  "*.ts"
+],  // Explicitly include .ts and .tsx files from the server directory
+}
