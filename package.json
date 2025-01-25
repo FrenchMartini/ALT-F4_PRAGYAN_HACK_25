@@ -1,0 +1,20 @@
+{
+    "name": "pragyan_hack_25",
+    "version": "1.0.0",
+    "description": "Road closure planner with traffic integration",
+    "main": "src/api.js",
+    "scripts": {
+        "start": "node src/api.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.3",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "leaflet": "^1.9.4",
+        "leaflet-draw": "^1.0.4",
+        "node-fetch": "^3.3.2"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
