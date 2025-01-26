@@ -20,7 +20,7 @@ project-root/
 
 ### Install Dependencies
 ```bash
-cd client && npm install
+cd client && npm install react-icons
 cd ../server && npm install
 ```
 
