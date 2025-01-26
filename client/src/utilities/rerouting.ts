@@ -55,7 +55,7 @@ export class Edge {
   }
 }
 
-class TrafficSimulation {
+export class TrafficSimulation {
   distributeTrafficRecursively(
     edge: Edge,
     inputTraffic: number,

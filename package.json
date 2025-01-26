@@ -18,5 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "react-icons": "^5.4.0"
+    "@turf/turf": "^7.2.0",
+    "ol": "^10.3.1"
   }
 }
