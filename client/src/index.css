@@ -1,1 +1,15 @@
 @import "tailwindcss";
+@font-face {
+    font-family: "OutfitMedium"; /*Can be any text*/
+    src:
+      local("OutfitRegular"),
+      url("/home/jayadharshini/ALT-F4_PRAGYAN_HACK_25/client/src/assets/OutfitMedium.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Eagle";
+    src:
+      local("Eagle"),
+      url("/home/jayadharshini/ALT-F4_PRAGYAN_HACK_25/client/src/assets/Eagle.ttf") format("truetype");
+  }
+  
+  
