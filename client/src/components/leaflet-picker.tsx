@@ -66,7 +66,7 @@ const LeafletPicker: React.FC = () => {
     };
   }, []);
 
-  return <div id="map" style={{ height: '100vh', width: '100%' }}></div>;
+  return <div id="map" className = "relative w-full h-full"></div>;
 };
 
 export default LeafletPicker;
