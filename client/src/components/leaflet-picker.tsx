@@ -3,13 +3,22 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-draw/dist/leaflet.draw.css';
 import 'leaflet-draw';
+import type { FeatureCollection } from 'geojson';
+import EdgeGraph from '../utilities/graph';
 
+// Define the LeafletPicker component
 const LeafletPicker: React.FC = () => {
   const bounds = L.latLngBounds(
     [38.8933, -77.0473],// Southwest corner
     [38.9181, -77.0030] // Northeast corner
 );
   useEffect(() => {
+    // initialize edge graph
+    // const geojsonData = JSON.parse("../assets/2023_Traffic_Volume.geojson") as FeatureCollection;
+    // const edgeGraph = new EdgeGraph(geojsonData);
+    // const markedPoint: [number, number] = [-77.012173, 38.892866];
+
+
     // Initialize the map
     const map = L.map('map', {
       center: new L.LatLng(38.9052, -77.0267),
@@ -55,6 +64,8 @@ const LeafletPicker: React.FC = () => {
 
       if (event.layerType === "marker") {
         const coordinates = layer.getLatLng(); // Get latitude and longitude of the marker
+        // const selectedEdge = edgeGraph.findEdgeContainingPoint([coordinates.lat, coordinates.lng]);
+        // console.log("Selected Edge:", selectedEdge);
         console.log("Marker Coordinates:", coordinates);
       }
 
