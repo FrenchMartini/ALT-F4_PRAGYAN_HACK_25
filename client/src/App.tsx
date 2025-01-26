@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import MapDrawingbaba from './components/leaflet-picker';
 
 // Define the type for the backend response
 interface ApiResponse {
@@ -17,9 +18,8 @@ function App() {
   }, []);
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>React + Vite + Express</h1>
-      <p>{message}</p>
+    <div className='relative w-[100vw] h-[100vw]'>
+      <MapDrawingbaba></MapDrawingbaba>
     </div>
   );
 }
